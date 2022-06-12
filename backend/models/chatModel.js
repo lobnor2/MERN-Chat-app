@@ -1,5 +1,4 @@
-const { default: mongoose } = require("mongoose");
-const mongose = require("mongoose");
+const mongoose = require("mongoose");
 
 const chatModel = mongoose.Schema(
   {
