@@ -55,7 +55,7 @@ function Signup() {
                 setShow(!show);
               }}
             >
-              {show ? <ViewOffIcon /> : <ViewIcon />}
+              {show ? <ViewIcon /> : <ViewOffIcon />}
             </Button>
           </InputRightElement>
         </InputGroup>
@@ -77,7 +77,7 @@ function Signup() {
                 setShow(!show);
               }}
             >
-              {show ? <ViewOffIcon /> : <ViewIcon />}
+              {show ? <ViewIcon /> : <ViewOffIcon />}
             </Button>
           </InputRightElement>
         </InputGroup>

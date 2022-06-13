@@ -1,11 +1,14 @@
 const express = require("express");
 const dotenv = require("dotenv");
 const { chats } = require("./data/data");
+const connectDB = require("./config/db");
+const colors = require("colors");
+
+dotenv.config();
+connectDB();
 
 // instance of express
 const app = express();
-
-dotenv.config();
 
 // first express api
 app.get("/", (req, res) => {
@@ -29,4 +32,7 @@ app.get("/api/chat/:id", (req, res) => {
 //import dotenv and config
 
 const PORT = process.env.PORT || 5000;
-app.listen(PORT, console.log(`server is listening at port ${PORT}`));
+app.listen(
+  PORT,
+  console.log(`server is listening at port ${PORT}`.yellow.bold)
+);

@@ -43,7 +43,7 @@ function Login() {
                 setShow(!show);
               }}
             >
-              {show ? <ViewOffIcon /> : <ViewIcon />}
+              {show ? <ViewIcon /> : <ViewOffIcon />}
             </Button>
           </InputRightElement>
         </InputGroup>
